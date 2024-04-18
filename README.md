@@ -38,6 +38,9 @@ BiteBuddy is a web application that allows users to browse and order food items 
 - Popper.js: [https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js](https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js)
 - Bootstrap JS: [https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js](https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js)
 
+## Demo
+You can view a live demo of this application [here](https://i-am-rajesh.github.io/To-Do-List.github.io/).
+
 ## Follow Us
 
 Stay connected with us for updates and promotions!
