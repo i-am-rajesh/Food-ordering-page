@@ -47,10 +47,3 @@ $(document).ready(function() {
       $('#sidePanel').css('right', '-700px');
   });
 });
-// This is just a sample script. Paste your real code (javascript or HTML) here.
-
-if ('this_is' == /an_example/) {
-  of_beautifier();
-} else {
-  var a = b ? (c % d) : e[f];
-}
