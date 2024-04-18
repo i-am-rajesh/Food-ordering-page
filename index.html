@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>BiteBuddy</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="head d-flex">
+				<nav class="navbar navbar-expand-sm navbar-light bg-light">
+					<a class="navbar-brand" href="#">Bite <span>Buddy</span>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li>
+								<div class="dropdown">
+									<a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Menu</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">VALUE SNACKERS</a>
+										<a class="dropdown-item" href="#">CHICKEN BUCKETS</a>
+										<a class="dropdown-item" href="#">BURGERS</a>
+										<a class="dropdown-item" href="#">SNACKS</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Deals</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0 navbar-search">
+							<input class="form-control mr-sm-2 col-6 mr-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
+				<div class="head-2 mt-0 align-top">
+					<button id="openPanelBtn" class="btn btn-outline-danger ml-5">
+						<i class="fas fa-shopping-cart"></i>
+					</button>
+				</div>
+			</div>
+			<div id="sidePanel">
+				<button id="closePanelBtn" class="btn btn-danger">x</button>
+				<div class="cart">
+					<div class="head-cart d-flex justify-content-around">
+						<div class="num">
+							<h5>#</h5>
+						</div>
+						<div class="items">
+							<h5>items</h5>
+						</div>
+						<div class="qty">
+							<h5>Qty</h5>
+						</div>
+					</div>
+					<ol class="cart-items"></ol>
+				</div>
+			</div>
+			<div class="content m-5 row">
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 h-75 item" style="width:15rem" data-index="1">
+					<img src="img/family.jpg" class="card-img-top mb-4-img-top" alt="..." data-index="1">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="1">Family Feast</h5>
+						<p>
+							<b class="price" data-index="1">&#8377; 859.05</b>
+						</p>
+						<p class="card mb-4-text border-0">Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml <button class="btn btn-outline-danger mt-5 add-to-cart tmp" data-index="1">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem" data-index="2">
+					<img src="img/burgers.jpg" class="card-img-top mb-4-img-top" alt="..." data-index="2">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3" data-index="2">2 Chicken Burgers</h5>
+						<p class="price" data-index="2">
+							<b>&#8377; 859.05</b>
+						</p>
+						<p class="card mb-4-text border-0">Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="2">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/veg-burgers.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">2 veg Burgers</h5>
+						<p class="price">
+							<b>&#8377; 179.05</b>
+						</p>
+						<p class="card mb-4-text border-0">Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="2">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-PR00001027.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">Chicken & Krispers</h5>
+						<p class="price">
+							<b>&#8377; 539.05</b>
+						</p>
+						<p class="card mb-4-text border-0">Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="3">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-K540.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">Zinger Burger</h5>
+						<p class="price">
+							<b>&#8377; 208.57</b>
+						</p>
+						<p class="card mb-4-text border-0">Deal of 2 chicken value burgers, 2 Hot & Crispy, 2 dips (20gm each) & 1 Pepsi 475ml <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="4">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-PR00000730.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">Buddy Meal</h5>
+						<p class="price">
+							<b>&#8377; 528.57</b>
+						</p>
+						<p class="card mb-4-text border-0">Share 2 Classic Chicken Zingers & a Medium Popcorn in this delightful combo for 2 <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="5">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-PR00002167.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">All Chicken Box</h5>
+						<p class="price">
+							<b>&#8377; 189.52</b>
+						</p>
+						<p class="card mb-4-text border-0">Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken A Box with your favorites! <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="6">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-K445.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">5pc Red Chicken</h5>
+						<p>
+							<b style="text-decoration:line-through">&#8377; 655.00</b>
+							<b class="price" style="color:red">&#8377; 528.57</b>
+						</p>
+						<p class="card mb-4-text border-0">Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken A Box with your favorites! <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="7">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+				<div class="card mb-4 col-4.5 p-0 mr-3 col-md-5 col-lg-3 item" style="width:15rem">
+					<img src="img/D-PR00000891.jpg" class="card-img-top mb-4-img-top" alt="...">
+					<div class="card mb-4-body p-2">
+						<h5 class="card-title mb-4-title border-0 px-3 py-3">Big 8</h5>
+						<p>
+							<b style="text-decoration:line-through">&#8377; 1008.00</b>
+							<b class="price" style="color:red">&#8377; 684.76</b>
+						</p>
+						<p class="card mb-4-text border-0">Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken A Box with your favorites! <button class="btn btn-outline-danger mt-5 add-to-cart" data-index="8">
+								<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Add to cart </button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
