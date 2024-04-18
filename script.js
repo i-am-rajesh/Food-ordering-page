@@ -16,15 +16,15 @@ $(document).ready(function() {
   // Function to add item to cart
   function addToCart(name, price, imageSrc) {
       $('.cart-items').append(`
-    <li class="cart-item d-flex justify-content-around ">
-      <img src="${imageSrc}" alt="${name}" class="cart-item-img">
+    <li class="cart-item d-flex align-items-start ">
+      <img src="${imageSrc}" alt="${name}" class="cart-item-img mr-sm-5">
       <div class="cart-item-info">
-        <p class="cart-item-name">${name}</p>
+        <p class="cart-item-name mr-sm-5">${name}</p>
         <p class="cart-item-price">${price}</p>
       </div>
       <div class="cart-item-quantity">
-        <input type="number" class="quantity col-6" value="1" min="1">
-        <button class="remove-item"><i class="fas fa-trash"></i></button>
+        <input type="number" class="quantity col-6 col-xs-1" value="1" min="1">
+        <button class="remove-item "><i class="fas fa-trash "></i></button>
       </div>
     </li>
   `);
