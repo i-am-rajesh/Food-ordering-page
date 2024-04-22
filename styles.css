@@ -63,8 +63,8 @@ body {
 /* Side panel */
 #openPanelBtn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 30%;
 }
 
 #sidePanel {
@@ -86,7 +86,23 @@ body {
   top: 20px;
   right: 20px;
 }
+@media screen and (max-width: 1000px) {
+  #openPanelBtn {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+  }
+  
+}
 
+@media screen and (max-width: 770px) {
+  #openPanelBtn {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+  }
+  
+}
 @media screen and (max-width: 702px) {
   #sidePanel {
     position: fixed;
@@ -115,6 +131,12 @@ body {
     justify-content: left;
     align-items:start;
   }
+  #openPanelBtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+  
 }
 @media screen and (max-width: 576px) {
   #sidePanel{
